@@ -63,7 +63,7 @@
 			DISPLAY 
 			"*********************************************************"
 			
-
+	
 			PERFORM P-VARIABLES THRU P-VARIABLES-FIM
 			.
 	   P-MAIN-END.
@@ -71,54 +71,54 @@
 	   P-VARIABLES.
 	   
       ****** X MINIMO	   
-			DISPLAY
-			"INSIRA O X MIN:"
-			
-			ACCEPT WS-XMIN
+		DISPLAY
+		"INSIRA O X MIN:"
+		
+		ACCEPT WS-XMIN
 			
       ****** X MAXIMO
-			DISPLAY
-			"INSIRA O X MAX:"
-			
-			ACCEPT WS-XMAX
+		DISPLAY
+		"INSIRA O X MAX:"
+		
+		ACCEPT WS-XMAX
 			
       ****** Y MINIMO
-			DISPLAY
-			"INSIRA O Y MIN:"
-			
-			ACCEPT WS-YMIN
+		DISPLAY
+		"INSIRA O Y MIN:"
+		
+		ACCEPT WS-YMIN
 			
       ****** Y MAXIMO
-			DISPLAY
-			"INSIRA O Y MAX:"
-			
-			ACCEPT WS-YMAX
+		DISPLAY
+		"INSIRA O Y MAX:"
+		
+		ACCEPT WS-YMAX
 			
       ****** X1
-			DISPLAY
-			"INSIRA O X1:"
-			
-			ACCEPT WS-XONE
+		DISPLAY
+		"INSIRA O X1:"
+		
+		ACCEPT WS-XONE
 			
       ****** X2
-			DISPLAY
-			"INSIRA O X2:"
-			
-			ACCEPT WS-XTWO
+		DISPLAY
+		"INSIRA O X2:"
+		
+		ACCEPT WS-XTWO
 			
       ****** Y1
-			DISPLAY
-			"INSIRA O Y1:"
-			
-			ACCEPT WS-YONE
+		DISPLAY
+		"INSIRA O Y1:"
+		
+		ACCEPT WS-YONE
 			
       ****** Y2
-			DISPLAY
-			"INSIRA O Y2:"
-			
-			ACCEPT WS-YTWO
-	   
-			RUN P-CALC THRU P-CALC-FIM
+		DISPLAY
+		"INSIRA O Y2:"
+		
+		ACCEPT WS-YTWO
+   
+		RUN P-CALC THRU P-CALC-FIM
 			.
 	   P-VARIABLES-FIM.
 	   
