@@ -17,26 +17,26 @@
        WORKING-STORAGE SECTION.
        77 WS-M	            PIC 9(09) VALUE ZEROES.
 	   
-	   77 WS-TOPO			PIC 9(09) VALUE ZEROES.
-	   77 WS-BASE			PIC 9(09) VALUE ZEROES.
-	   77 WS-ESQUERDA		PIC 9(09) VALUE ZEROES.
-	   77 WS-DIREITA		PIC 9(09) VALUE ZEROES.
+       77 WS-TOPO			PIC 9(09) VALUE ZEROES.
+       77 WS-BASE			PIC 9(09) VALUE ZEROES.
+       77 WS-ESQUERDA	PIC 9(09) VALUE ZEROES.
+       77 WS-DIREITA	PIC 9(09) VALUE ZEROES.
 	   
-	   77 WS-XMIN			PIC 9(02) VALUE ZEROES.
-	   77 WS-XMAX			PIC 9(02) VALUE ZEROES.
-	   77 WS-YMIN			PIC 9(02) VALUE ZEROES.
-	   77 WS-YMAX			PIC 9(02) VALUE ZEROES.
+       77 WS-XMIN			PIC 9(02) VALUE ZEROES.
+       77 WS-XMAX			PIC 9(02) VALUE ZEROES.
+       77 WS-YMIN			PIC 9(02) VALUE ZEROES.
+       77 WS-YMAX			PIC 9(02) VALUE ZEROES.
 	   
-	   77 WS-XONE			PIC 9(02) VALUE ZEROES.
-	   77 WS-XTWO			PIC 9(02) VALUE ZEROES.
-	   77 WS-YONE			PIC 9(02) VALUE ZEROES.
-	   77 WS-YTWO			PIC 9(02) VALUE ZEROES.	
+       77 WS-XONE			PIC 9(02) VALUE ZEROES.
+       77 WS-XTWO			PIC 9(02) VALUE ZEROES.
+       77 WS-YONE			PIC 9(02) VALUE ZEROES.
+       77 WS-YTWO			PIC 9(02) VALUE ZEROES.	
 
-	   77 WS-STATUS        	PIC X(01) VALUE ZEROES.	   
+       77 WS-STATUS  	PIC X(01) VALUE ZEROES.	   
 
        PROCEDURE DIVISION. 
 	   
-	   P-MAIN.
+	    P-MAIN.
 	   
 			INITIALISE WS-XONE
 					   WS-XTWO
@@ -66,63 +66,63 @@
 	
 			PERFORM P-VARIABLES THRU P-VARIABLES-FIM
 			.
-	   P-MAIN-END.
+	    P-MAIN-END.
 	   
-	   P-VARIABLES.
+	    P-VARIABLES.
 	   
-      ****** X MINIMO	   
-		DISPLAY
-		"INSIRA O X MIN:"
+     ****** X MINIMO	   
+		  DISPLAY
+		  "INSIRA O X MIN:"
 		
-		ACCEPT WS-XMIN
+		  ACCEPT WS-XMIN
 			
-      ****** X MAXIMO
-		DISPLAY
-		"INSIRA O X MAX:"
+     ****** X MAXIMO
+		  DISPLAY
+		  "INSIRA O X MAX:"
 		
-		ACCEPT WS-XMAX
+		  ACCEPT WS-XMAX
 			
-      ****** Y MINIMO
-		DISPLAY
-		"INSIRA O Y MIN:"
+     ****** Y MINIMO
+		  DISPLAY
+		  "INSIRA O Y MIN:"
 		
-		ACCEPT WS-YMIN
+		  ACCEPT WS-YMIN
 			
-      ****** Y MAXIMO
-		DISPLAY
-		"INSIRA O Y MAX:"
+     ****** Y MAXIMO
+		  DISPLAY
+		  "INSIRA O Y MAX:"
 		
-		ACCEPT WS-YMAX
+		  ACCEPT WS-YMAX
 			
-      ****** X1
-		DISPLAY
-		"INSIRA O X1:"
+     ****** X1
+		  DISPLAY
+		  "INSIRA O X1:"
 		
-		ACCEPT WS-XONE
+		  ACCEPT WS-XONE
 			
-      ****** X2
-		DISPLAY
-		"INSIRA O X2:"
+     ****** X2
+		  DISPLAY
+		  "INSIRA O X2:"
 		
-		ACCEPT WS-XTWO
+		  ACCEPT WS-XTWO
 			
-      ****** Y1
-		DISPLAY
-		"INSIRA O Y1:"
+     ****** Y1
+		  DISPLAY
+		  "INSIRA O Y1:"
 		
-		ACCEPT WS-YONE
+		  ACCEPT WS-YONE
 			
-      ****** Y2
-		DISPLAY
-		"INSIRA O Y2:"
+     ****** Y2
+		  DISPLAY
+		  "INSIRA O Y2:"
 		
-		ACCEPT WS-YTWO
+		  ACCEPT WS-YTWO
    
-		RUN P-CALC THRU P-CALC-FIM
+		  RUN P-CALC THRU P-CALC-FIM
 			.
-	   P-VARIABLES-FIM.
+	    P-VARIABLES-FIM.
 	   
-	   P-CALC.
+	    P-CALC.
 	   
 			DISPLAY
 			"CALCULATING..."
@@ -136,9 +136,9 @@
 			
 			PERFORM P-ENCERRA THRU P-ENCERRA-MAIN
 			.
-	   P-CALC-FIM.
+	    P-CALC-FIM.
 	   
-	   P-ENCERRA.
+	    P-ENCERRA.
 	   
 			DISPLAY " "
 			DISPLAY " "
@@ -172,6 +172,6 @@
             END-EVALUATE.
 	   
 			STOP RUN.
-	   P-ENCERRA-FIM.
+	    P-ENCERRA-FIM.
 	   
-	   END PROGRAM CPF_CALC.
+	    END PROGRAM CPF_CALC.
